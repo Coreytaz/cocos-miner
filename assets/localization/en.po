@@ -1,0 +1,24 @@
+msgid ""
+msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"MIME-Version: 1.0\n"
+"Language-Team: CocosCreator\n"
+"Last-Translator: cocosCreator\n"
+"PO-Revision-Date: Tue, 15 Jul 2025 15:17:04 GMT\n"
+"POT-Creation-Date: Tue, 15 Jul 2025 15:17:04 GMT\n"
+"Plural-Forms: \n"
+"Project-Id-Version: \n"
+"Language: en\n"
+
+#: 1fb50sZWaJGYYD6J/ImdXGE
+msgid "Играть"
+msgstr ""
+
+#: 4d273FWm9hNHpT/nhtT3S5V
+msgid "Статистика"
+msgstr ""
+
+#: 3f3bcfNdK1FOp3EPojScAlu
+msgid "Настройки"
+msgstr ""

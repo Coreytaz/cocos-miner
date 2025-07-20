@@ -1,0 +1,13 @@
+{
+  "name": "merge-miner",
+  "uuid": "9c7a3173-add5-495d-8282-83871ff0d468",
+  "creator": {
+    "version": "3.8.6",
+    "registry": {
+      "remote": {}
+    },
+    "dependencies": {
+      "localization-editor": "1.0.4"
+    }
+  }
+}

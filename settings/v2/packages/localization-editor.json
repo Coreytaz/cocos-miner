@@ -1,0 +1,16 @@
+{
+  "__version__": "1.0.4",
+  "L10nEnable": true,
+  "ProjectConfig": {
+    "localLanguage": "ru",
+    "scanOptions": [
+      {
+        "dirs": [
+          "localization"
+        ],
+        "extNames": [],
+        "excludes": []
+      }
+    ]
+  }
+}
