@@ -272,7 +272,7 @@ items:
       _variants: []
   - - afN4GLwwJDBL4BS5kgjvLY
     - key: afN4GLwwJDBL4BS5kgjvLY
-      value: Назад
+      value: ↩️
       type: 2
       isVariant: false
       associations:
@@ -309,7 +309,7 @@ items:
 languageConfig:
   bcp47Tag: ru
   providerTag: ru
-  translateFinished: 71
-  translateTotal: 71
+  translateFinished: 68
+  translateTotal: 68
   compileFinished: 0
   compileTotal: 36

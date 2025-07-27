@@ -32,7 +32,7 @@ items:
       _variants: []
   - - afN4GLwwJDBL4BS5kgjvLY
     - key: afN4GLwwJDBL4BS5kgjvLY
-      value: Back
+      value: ↩️
       type: 2
       isVariant: false
       associations:
@@ -69,7 +69,7 @@ items:
 languageConfig:
   bcp47Tag: en
   providerTag: en
-  translateFinished: 41
-  translateTotal: 32
+  translateFinished: 38
+  translateTotal: 30
   compileFinished: 0
   compileTotal: 6

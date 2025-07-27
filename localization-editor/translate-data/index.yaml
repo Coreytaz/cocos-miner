@@ -246,12 +246,7 @@ items:
       type: 2
       isVariant: false
       associations:
-        - sceneUuid: 32cf602b-e709-441e-b035-2336c8ea36bb
-          nodeUuid: f5VrwX/b5MUZUSrpsCW2s1
-          reference: 32cf602b-e709-441e-b035-2336c8ea36bb
-        - sceneUuid: 32cf602b-e709-441e-b035-2336c8ea36bb
-          nodeUuid: 85CRh22KVB5Zyr7Yu8YnfS
-          reference: 32cf602b-e709-441e-b035-2336c8ea36bb
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
       _variants: []
   - - 4d273FWm9hNHpT/nhtT3S5V
     - key: 4d273FWm9hNHpT/nhtT3S5V
@@ -259,12 +254,8 @@ items:
       type: 2
       isVariant: false
       associations:
-        - sceneUuid: 32cf602b-e709-441e-b035-2336c8ea36bb
-          nodeUuid: 16ATUjc+VGF6bNL9CrvEvZ
-          reference: 32cf602b-e709-441e-b035-2336c8ea36bb
-        - sceneUuid: 32cf602b-e709-441e-b035-2336c8ea36bb
-          nodeUuid: 8c1EKUhr1C74TSRGOij4X1
-          reference: 32cf602b-e709-441e-b035-2336c8ea36bb
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
       _variants: []
   - - 3f3bcfNdK1FOp3EPojScAlu
     - key: 3f3bcfNdK1FOp3EPojScAlu
@@ -272,9 +263,8 @@ items:
       type: 2
       isVariant: false
       associations:
-        - sceneUuid: 32cf602b-e709-441e-b035-2336c8ea36bb
-          nodeUuid: 0341Lg6ANN5KUQM5hau77v
-          reference: 32cf602b-e709-441e-b035-2336c8ea36bb
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
       _variants: []
   - - afN4GLwwJDBL4BS5kgjvLY
     - key: afN4GLwwJDBL4BS5kgjvLY
@@ -282,23 +272,24 @@ items:
       type: 2
       isVariant: false
       associations:
-        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
-          nodeUuid: 7c/bEGA8xFkIt6IHLt3Ix2
-          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
       _variants: []
   - - 39q7ZqoHNLnrdtzJD3zoYl
     - key: 39q7ZqoHNLnrdtzJD3zoYl
       value: ''
       type: 2
       isVariant: false
-      associations: []
+      associations:
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
       _variants: []
   - - 846PWgRItLZa94YF+9iw0y
     - key: 846PWgRItLZa94YF+9iw0y
       value: ''
       type: 2
       isVariant: false
-      associations: []
+      associations:
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
       _variants: []
   - - default
     - key: default
@@ -309,7 +300,7 @@ items:
       _variants: []
 languageConfig:
   bcp47Tag: index
-  translateFinished: 71
+  translateFinished: 68
   translateTotal: 0
   compileFinished: 0
   compileTotal: 0

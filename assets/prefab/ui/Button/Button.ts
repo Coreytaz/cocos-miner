@@ -1,6 +1,5 @@
 import {
   _decorator,
-  Component,
   EventHandler,
   Node,
   Button as ButtonCocos,
@@ -10,6 +9,27 @@ import {
 import { ClipNamesSFX } from "db://assets/script/consts/ClipNamesSFX.const";
 import { AudioManager } from "db://assets/script/core/audio/AudioManager";
 import { l10n, L10nLabel } from "db://localization-editor/l10n";
+
+declare module "cc" {
+  namespace __private {
+    export enum _cocos_ui_button__ButtonEventType {
+      /**
+       * @event click
+       * @param {Event.EventCustom} event
+       * @param {Button} button - The Button component.
+       */
+      CLICK_AFTER_SOUND = "click:after-sound",
+    }
+  }
+}
+
+Object.defineProperty(ButtonCocos.EventType, "CLICK_AFTER_SOUND", {
+  value: "click:after-sound",
+  writable: false,
+  enumerable: true,
+  configurable: false,
+});
+
 const { ccclass, property } = _decorator;
 
 @ccclass("Button")
@@ -22,57 +42,57 @@ export class Button extends L10nLabel {
 
   onLoad() {
     this.initTextLabel();
-    this.initClickEventHandler("playSound");
+    this.patchNativeClickEvent();
   }
 
-  initClickEventHandler(handler: string) {
-    const clickEventHandler = new EventHandler();
-    clickEventHandler.target = this.node;
-    clickEventHandler.component = "Button";
-    clickEventHandler.handler = handler;
-
-    const button = this.node.getComponent(ButtonCocos);
-    button.clickEvents.push(clickEventHandler);
-  }
-
-  initTextLabel() {
+  private initTextLabel() {
     const text = l10n.t(this.key);
-
-    if (!text) return console.warn(`Localization key not found: ${this.key}`);
+    if (!text) {
+      console.warn(`Localization key not found: ${this.key}`);
+      return;
+    }
 
     const label = this.labelNode.getComponent(Label);
-
-    if (!label)
-      return console.warn(
-        `Label component not found on titleNode: ${this.labelNode.name}`
+    if (!label) {
+      console.warn(
+        `Label component not found on labelNode: ${this.labelNode.name}`
       );
+      return;
+    }
 
     label.string = text;
   }
 
-  playSound() {
-    if (this.isPlayClickSound()) this.stopClickSound();
-    this.playClickSound();
+  private patchNativeClickEvent() {
+    const button = this.getComponent(ButtonCocos);
+    if (!button) return;
+
+    this.node.off(ButtonCocos.EventType.CLICK, this.__proxyClick.bind(this));
+    this.node.on(ButtonCocos.EventType.CLICK, this.__proxyClick.bind(this));
+  }
+
+  private async __proxyClick(event: Event) {
+    await this.playClickSound();
+    this.node.emit(ButtonCocos.EventType.CLICK_AFTER_SOUND, event);
+  }
+
+  private async playClickSound() {
+    if (!this.isAudioManagerInitialized()) return null;
+
+    const audioSource = await AudioManager.instance.audioChannelSFX.playSound(
+      this.clipNameSFX,
+      {
+        waitForEnd: true,
+      }
+    );
+
+    return audioSource;
   }
 
   private isAudioManagerInitialized(): boolean {
-    if (!AudioManager.isInstanceInitialized()) return false;
-    if (!AudioManager.instance.isAudioChannelSFXInitialized()) return false;
-    return true;
-  }
-
-  private stopClickSound() {
-    if (!this.isAudioManagerInitialized()) return;
-    AudioManager.instance.audioChannelSFX.stopSound(this.clipNameSFX);
-  }
-
-  private isPlayClickSound() {
-    if (!this.isAudioManagerInitialized()) return;
-    return AudioManager.instance.audioChannelSFX.isPlaying(this.clipNameSFX);
-  }
-
-  private playClickSound() {
-    if (!this.isAudioManagerInitialized()) return;
-    AudioManager.instance.audioChannelSFX.playSound("click");
+    return (
+      AudioManager.isInstanceInitialized() &&
+      AudioManager.instance.isAudioChannelSFXInitialized()
+    );
   }
 }

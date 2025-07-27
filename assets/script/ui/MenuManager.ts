@@ -33,7 +33,10 @@ export class MenuManager extends Component {
 
   onClickChangeMenuStateAddEventListeners(nodes: Button[], state: MenuState) {
     nodes.forEach((node) => {
-      node.node.on("click", this.onClickButton.bind(this, state));
+      node.node.on(
+        Button.EventType.CLICK_AFTER_SOUND,
+        this.onClickButton.bind(this, state)
+      );
     });
   }
 

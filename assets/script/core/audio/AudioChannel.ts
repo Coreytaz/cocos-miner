@@ -1,4 +1,4 @@
-import { _decorator, AudioSource, Component, Enum } from "cc";
+import { _decorator, AudioSource, Component, Enum, Node } from "cc";
 import { defaultConfig } from "../../consts/Default.const";
 import { Sound } from "./Sound";
 import { LSConfig } from "../../consts/LSConfig.const";
@@ -56,14 +56,17 @@ export class AudioChannel extends Component {
   ) {
     const sound = this._soundsRecord[name];
 
-    if (!sound) return console.warn(`Sound with name "${name}" not found.`);
+    if (!sound) {
+      console.warn(`Sound with name "${name}" not found.`);
+      return null;
+    }
 
-    if (this._muted) return;
+    if (this._muted) return null;
 
     let audioSource = this._soundsSource[name];
 
     if (!audioSource) {
-      audioSource = new AudioSource();
+      audioSource = this.node.addComponent(AudioSource);
       audioSource.clip = sound.clip;
       audioSource.volume = this._volume * sound.volume;
       audioSource.loop = options?.playLoop || sound.loop;
@@ -71,6 +74,16 @@ export class AudioChannel extends Component {
     }
 
     audioSource.play();
+
+    if (options?.waitForEnd) {
+      return new Promise<AudioSource>((resolve) => {
+        audioSource.node.once("ended", () => {
+          resolve(audioSource);
+        });
+      });
+    }
+
+    return Promise.resolve(audioSource);
   }
 
   isPlaying(name: ClipNamesMusic | ClipNamesSFX): boolean {
