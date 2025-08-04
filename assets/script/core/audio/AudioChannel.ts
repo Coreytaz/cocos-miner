@@ -1,9 +1,10 @@
-import { _decorator, AudioSource, Component, Enum, Node } from "cc";
+import { _decorator, AudioSource, Component, Enum, sys } from "cc";
 import { defaultConfig } from "../../consts/Default.const";
 import { Sound } from "./Sound";
 import { LSConfig } from "../../consts/LSConfig.const";
 import type { ClipNamesMusic } from "../../consts/ClipNamesMusic.const";
 import type { ClipNamesSFX } from "../../consts/ClipNamesSFX.const";
+
 const { ccclass, property } = _decorator;
 
 interface AudioChannePlaySoundOptions {
@@ -111,14 +112,14 @@ export class AudioChannel extends Component {
   }
 
   set setMuted(value: boolean) {
-    localStorage.setItem(this.storageKeyPrefixMuted, value ? "1" : "0");
+    sys.localStorage.setItem(this.storageKeyPrefixMuted, value ? "1" : "0");
     this._muted = value;
     this.setVolumeSounds(value ? 0 : this._volume);
   }
 
   set volume(value: number) {
     this._volume = value;
-    localStorage.setItem(this.storageKeyPrefixVolum, value.toString());
+    sys.localStorage.setItem(this.storageKeyPrefixVolum, value.toString());
     this.setVolumeSounds(value);
   }
 
@@ -154,14 +155,14 @@ export class AudioChannel extends Component {
 
   private loadVolume() {
     const volume = parseFloat(
-      localStorage.getItem(this.storageKeyPrefixVolum) ??
+      sys.localStorage.getItem(this.storageKeyPrefixVolum) ??
         this.defaultVolume.toString()
     );
     this._volume = volume;
   }
 
   private loadMuted() {
-    const saved = localStorage.getItem(this.storageKeyPrefixMuted);
+    const saved = sys.localStorage.getItem(this.storageKeyPrefixMuted);
     this._muted = saved === "1";
   }
 }

@@ -52,7 +52,13 @@ export class Button extends L10nLabel {
       return;
     }
 
+    if (!this.labelNode) {
+      console.warn("Label node is not assigned.");
+      return;
+    }
+
     const label = this.labelNode.getComponent(Label);
+
     if (!label) {
       console.warn(
         `Label component not found on labelNode: ${this.labelNode.name}`

@@ -245,8 +245,7 @@ items:
       value: ''
       type: 2
       isVariant: false
-      associations:
-        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+      associations: []
       _variants: []
   - - 4d273FWm9hNHpT/nhtT3S5V
     - key: 4d273FWm9hNHpT/nhtT3S5V
@@ -255,7 +254,6 @@ items:
       isVariant: false
       associations:
         - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
-        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
       _variants: []
   - - 3f3bcfNdK1FOp3EPojScAlu
     - key: 3f3bcfNdK1FOp3EPojScAlu
@@ -263,7 +261,6 @@ items:
       type: 2
       isVariant: false
       associations:
-        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
         - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
       _variants: []
   - - afN4GLwwJDBL4BS5kgjvLY
@@ -296,7 +293,25 @@ items:
       value: ''
       type: 2
       isVariant: false
-      associations: []
+      associations:
+        - sceneUuid: 0812eac2-cdb7-47dc-b441-aaf532926f9c
+          nodeUuid: 8f1i6XAzZIrZlQSgNJZG9G
+          reference: 0812eac2-cdb7-47dc-b441-aaf532926f9c
+        - sceneUuid: 0812eac2-cdb7-47dc-b441-aaf532926f9c
+          nodeUuid: 8f1i6XAzZIrZlQSgNJZG9G
+          reference: 0812eac2-cdb7-47dc-b441-aaf532926f9c
+        - sceneUuid: 0812eac2-cdb7-47dc-b441-aaf532926f9c
+          nodeUuid: 8f1i6XAzZIrZlQSgNJZG9G
+          reference: 0812eac2-cdb7-47dc-b441-aaf532926f9c
+        - sceneUuid: 0812eac2-cdb7-47dc-b441-aaf532926f9c
+          nodeUuid: 8f1i6XAzZIrZlQSgNJZG9G
+          reference: 0812eac2-cdb7-47dc-b441-aaf532926f9c
+        - sceneUuid: 0812eac2-cdb7-47dc-b441-aaf532926f9c
+          nodeUuid: beIdxoTfZJm68wktEny3SB
+          reference: 0812eac2-cdb7-47dc-b441-aaf532926f9c
+        - sceneUuid: 10212533-56c6-484d-90b6-57dfbdcb6cb4
+          nodeUuid: e9C7L+QYdN3KiQo0IrWEzh
+          reference: 10212533-56c6-484d-90b6-57dfbdcb6cb4
       _variants: []
 languageConfig:
   bcp47Tag: index

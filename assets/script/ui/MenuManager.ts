@@ -111,7 +111,6 @@ export class MenuManager extends Component {
   }
 
   onChangeScene(sceneName: string) {
-    console.log(`onChangeScene`);
     director.loadScene(sceneName);
   }
 
