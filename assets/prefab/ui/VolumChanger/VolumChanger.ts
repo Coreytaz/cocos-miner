@@ -1,13 +1,4 @@
-import {
-  _decorator,
-  Button,
-  Component,
-  Enum,
-  EventTouch,
-  Label,
-  Node,
-  Slider,
-} from "cc";
+import { _decorator, Button, Enum, EventTouch, Label, Node, Slider } from "cc";
 import { ClipNamesSFX } from "db://assets/script/consts/ClipNamesSFX.const";
 import { AudioManager } from "db://assets/script/core/audio/AudioManager";
 import { l10n, L10nLabel } from "db://localization-editor/l10n";
@@ -37,8 +28,7 @@ export class VolumChanger extends L10nLabel {
   private initTitle() {
     const text = l10n.t(this.key);
 
-    if (!text)
-      return console.warn(`Localization key not found: ${this.key}`);
+    if (!text) return console.warn(`Localization key not found: ${this.key}`);
 
     const label = this.titleNode.getComponent(Label);
 

@@ -279,6 +279,12 @@ items:
       isVariant: false
       associations:
         - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+        - sceneUuid: 32cf602b-e709-441e-b035-2336c8ea36bb
+          nodeUuid: 49JbGNIXNLjYQgKg40O55+
+          reference: 32cf602b-e709-441e-b035-2336c8ea36bb
+        - sceneUuid: 32cf602b-e709-441e-b035-2336c8ea36bb
+          nodeUuid: 49JbGNIXNLjYQgKg40O55+
+          reference: 32cf602b-e709-441e-b035-2336c8ea36bb
       _variants: []
   - - 846PWgRItLZa94YF+9iw0y
     - key: 846PWgRItLZa94YF+9iw0y
@@ -287,6 +293,9 @@ items:
       isVariant: false
       associations:
         - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+        - sceneUuid: 32cf602b-e709-441e-b035-2336c8ea36bb
+          nodeUuid: 18Ex3HBLlF8J6JEojpLv//
+          reference: 32cf602b-e709-441e-b035-2336c8ea36bb
       _variants: []
   - - default
     - key: default
