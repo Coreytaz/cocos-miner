@@ -1,12 +1,18 @@
 import {
+  Texture2D,
+  ImageAsset,
+  SpriteFrame,
+  resources,
+  Sprite,
   _decorator,
-  EventHandler,
+  CCBoolean,
   Node,
   Button as ButtonCocos,
   Enum,
   Label,
 } from "cc";
 import { ClipNamesSFX } from "db://assets/script/consts/ClipNamesSFX.const";
+import { IconNames } from "db://assets/script/consts/IconNames.const";
 import { AudioManager } from "db://assets/script/core/audio/AudioManager";
 import { l10n, L10nLabel } from "db://localization-editor/l10n";
 
@@ -37,12 +43,110 @@ export class Button extends L10nLabel {
   @property(Node)
   labelNode: Node = null!;
 
+  @property(Node)
+  iconNode: Node = null!;
+
+  @property(SpriteFrame)
+  defaultBG: SpriteFrame = null!;
+
   @property({ type: Enum(ClipNamesSFX) })
   clipNameSFX: ClipNamesSFX = "click";
 
+  @property(CCBoolean)
+  private isIcon: boolean = false;
+
+  @property({
+    type: Enum(IconNames),
+    visible(this: Button) {
+      return this.isIcon;
+    },
+  })
+  iconName: IconNames = "" as IconNames;
+
+  @property({
+    type: SpriteFrame,
+    visible(this: Button) {
+      return this.isIcon;
+    },
+  })
+  iconBG: SpriteFrame = null!;
+
   onLoad() {
-    this.initTextLabel();
+    if (this.isIcon) {
+      this.initBG(this.iconBG);
+      this.initIcon();
+    } else {
+      this.initBG(this.defaultBG);
+      this.initTextLabel();
+    }
+
     this.patchNativeClickEvent();
+  }
+
+  private initBG(spriteFrame: SpriteFrame) {
+    if (!spriteFrame) {
+      console.warn("SpriteFrame for background is not assigned.");
+      return;
+    }
+
+    const sprite = this.getComponent(Sprite);
+
+    if (!sprite) {
+      console.warn(`Sprite component not found on node: ${this.node.name}`);
+      return;
+    }
+
+    sprite.spriteFrame = spriteFrame;
+  }
+
+  private async initIcon() {
+    if (!this.iconName) {
+      console.warn("Icon name is not assigned.");
+      return;
+    }
+
+    if (!this.iconNode) {
+      console.warn("Icon node is not assigned.");
+      return;
+    }
+
+    const spriteFrame = await new Promise<SpriteFrame | null>((resolve) => {
+      return resources.load(
+        `icons/${this.iconName}`,
+        ImageAsset,
+        (err, imageAsset) => {
+          if (err) {
+            resolve(null);
+          }
+
+          const texture = new Texture2D();
+          texture.image = imageAsset;
+
+          const spriteFrame = new SpriteFrame();
+          spriteFrame.texture = texture;
+
+          resolve(spriteFrame);
+        }
+      );
+    });
+
+    if (!spriteFrame) {
+      console.warn(`SpriteFrame not found for icon: ${this.iconName}`);
+      return;
+    }
+
+    const iconSprite = this.iconNode.getComponent(Sprite);
+
+    if (!iconSprite) {
+      console.warn(
+        `Sprite component not found on iconNode: ${this.iconNode.name}`
+      );
+      return;
+    }
+
+    iconSprite.spriteFrame = spriteFrame;
+
+    this.iconNode.active = true;
   }
 
   private initTextLabel() {
@@ -67,6 +171,8 @@ export class Button extends L10nLabel {
     }
 
     label.string = text;
+
+    this.labelNode.active = true;
   }
 
   private patchNativeClickEvent() {

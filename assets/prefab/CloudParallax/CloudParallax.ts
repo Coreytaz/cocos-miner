@@ -11,6 +11,7 @@ import {
   instantiate,
 } from "cc";
 import { Cloud } from "./Cloud";
+
 const { ccclass, property } = _decorator;
 
 type CloudData = {
@@ -32,14 +33,18 @@ export class CloudParallax extends Component {
   @property
   spawnInterval: number = 2.0;
 
+  @property(Number)
+  saveZone: number = 50;
+
   private cloudPool: Node[] = [];
   private activeClouds: CloudData[] = [];
   private screenWidth: number = 0;
   private screenHeight: number = 0;
 
   onLoad() {
-    const ui = this.node.getComponent(UITransform);
-    this.screenWidth = ui.width;
+    const ui = this.node.scene.getComponentInChildren(UITransform);
+
+    this.screenWidth = ui.width + this.saveZone;
     this.screenHeight = ui.height;
 
     for (let i = 0; i < this.maxClouds; i++) {
