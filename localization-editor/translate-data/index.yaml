@@ -245,26 +245,21 @@ items:
       value: ''
       type: 2
       isVariant: false
-      associations:
-        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+      associations: []
       _variants: []
   - - 4d273FWm9hNHpT/nhtT3S5V
     - key: 4d273FWm9hNHpT/nhtT3S5V
       value: ''
       type: 2
       isVariant: false
-      associations:
-        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
-        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+      associations: []
       _variants: []
   - - 3f3bcfNdK1FOp3EPojScAlu
     - key: 3f3bcfNdK1FOp3EPojScAlu
       value: ''
       type: 2
       isVariant: false
-      associations:
-        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
-        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+      associations: []
       _variants: []
   - - afN4GLwwJDBL4BS5kgjvLY
     - key: afN4GLwwJDBL4BS5kgjvLY
@@ -278,19 +273,14 @@ items:
       value: ''
       type: 2
       isVariant: false
-      associations:
-        - sceneUuid: 32cf602b-e709-441e-b035-2336c8ea36bb
-          nodeUuid: 49JbGNIXNLjYQgKg40O55+
-          reference: 32cf602b-e709-441e-b035-2336c8ea36bb
-        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+      associations: []
       _variants: []
   - - 846PWgRItLZa94YF+9iw0y
     - key: 846PWgRItLZa94YF+9iw0y
       value: ''
       type: 2
       isVariant: false
-      associations:
-        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+      associations: []
       _variants: []
   - - default
     - key: default
@@ -298,28 +288,9 @@ items:
       type: 2
       isVariant: false
       associations:
-        - sceneUuid: 0812eac2-cdb7-47dc-b441-aaf532926f9c
-          nodeUuid: d9xHYI57FFcZ9QUhZEayMB
-          reference: 0812eac2-cdb7-47dc-b441-aaf532926f9c
-        - sceneUuid: 32cf602b-e709-441e-b035-2336c8ea36bb
-          nodeUuid: 3b5ZwMPHpK7bMj/ti9B3dW
-          reference: 32cf602b-e709-441e-b035-2336c8ea36bb
-        - sceneUuid: 32cf602b-e709-441e-b035-2336c8ea36bb
-          nodeUuid: 8baZNaGitAX45db5pHs+/p
-          reference: 32cf602b-e709-441e-b035-2336c8ea36bb
-        - sceneUuid: 32cf602b-e709-441e-b035-2336c8ea36bb
-          nodeUuid: 75dQEaaBNGLoSuvD96iwOC
-          reference: 32cf602b-e709-441e-b035-2336c8ea36bb
-        - sceneUuid: 32cf602b-e709-441e-b035-2336c8ea36bb
-          nodeUuid: 75dQEaaBNGLoSuvD96iwOC
-          reference: 32cf602b-e709-441e-b035-2336c8ea36bb
-        - sceneUuid: 32cf602b-e709-441e-b035-2336c8ea36bb
-          nodeUuid: 75dQEaaBNGLoSuvD96iwOC
-          reference: 32cf602b-e709-441e-b035-2336c8ea36bb
         - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
         - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
-        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
-        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+        - nodeUuid: a7gXK9WipHXZv8W5BWe9Ay
       _variants: []
 languageConfig:
   bcp47Tag: index

@@ -7,7 +7,7 @@ export class BackMainMenu extends Component {
   backButton: Button = null!;
 
   onLoad() {
-    this.backButton.node.on("click", this.onBackButtonClick, this);
+    this.backButton.node.on(Button.EventType.CLICK_AFTER_SOUND, this.onBackButtonClick, this);
   }
 
   onBackButtonClick() {
