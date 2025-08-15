@@ -1,4 +1,5 @@
-import { _decorator, Component, Node } from "cc";
+import { _decorator, Component } from "cc";
+import { DEV } from "cc/env";
 
 import { Currency } from "./Currency";
 
@@ -21,7 +22,7 @@ export class CurrencyManager extends Component {
 
   static EventType: typeof CurrencyManagerEventType = CurrencyManagerEventType;
 
-  private _currencyMap: Map<string, Currency> = new Map();
+  private _currencyMap: Map<Currency["id"], Currency> = new Map();
 
   private init() {
     this.currencies.forEach((currency) => {
@@ -40,14 +41,14 @@ export class CurrencyManager extends Component {
       return;
     }
 
-    currency.value += amount;
+    currency.value = currency.value + amount;
   }
 
-  private _getCurrency(id: string): Currency | undefined {
+  private _getCurrency(id: Currency["id"]): Currency | undefined {
     return this._currencyMap.get(id);
   }
 
-  addCurrency(id: string, amount: number) {
+  addCurrency(id: Currency["id"], amount: number) {
     const currency = this._getCurrency(id);
     this._addCurrency(currency, amount);
     this._emitCurrencyUpdate();
@@ -55,10 +56,21 @@ export class CurrencyManager extends Component {
   }
 
   private _emitCurrencyUpdate() {
-    this.node.emit(CurrencyManager.EventType.CURRENCY_UPDATED, this.currencies);
+    this.node.emit(
+      CurrencyManager.EventType.CURRENCY_UPDATED,
+      this._currencyMap
+    );
   }
 
   private saveCurrencies() {
     // Сохранение в localStorage или на сервер
+  }
+
+  testBalance() {
+    if (!DEV) return;
+
+    this.currencies.forEach((currency) => {
+      this.addCurrency(currency.id, Math.floor(Math.random() * 1000000));
+    });
   }
 }

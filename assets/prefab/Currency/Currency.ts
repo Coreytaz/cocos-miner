@@ -13,6 +13,9 @@ import {
 
 import { CurrencyNames } from "../../script/consts/CurrencyNames.const";
 import { formatNumber } from "../../script/libs/formatNumber";
+import { UIOpacity } from "cc";
+import { Vec3 } from "cc";
+import { tween } from "cc";
 
 const { ccclass, property } = _decorator;
 
@@ -54,6 +57,31 @@ export class Currency extends Component {
     }
 
     labelComponent.string = formatNumber(value);
+    this.playValueChangeAnimation();
+  }
+
+  private playValueChangeAnimation() {
+    const labelNode = this.valueLabel;
+
+    // Добавляем UIOpacity, если его нет
+    if (!labelNode.getComponent(UIOpacity)) {
+      labelNode.addComponent(UIOpacity);
+    }
+
+    // Сбрасываем параметры перед анимацией
+    labelNode.setScale(new Vec3(1, 1, 1));
+    labelNode.getComponent(UIOpacity)!.opacity = 255;
+
+    // Анимация увеличения масштаба и мигания
+    tween(labelNode)
+      .to(0.1, { scale: new Vec3(1.05, 1.05, 1.05) })
+      .to(0.1, { scale: new Vec3(1, 1, 1) })
+      .start();
+
+    tween(labelNode.getComponent(UIOpacity)!)
+      .to(0.05, { opacity: 150 })
+      .to(0.05, { opacity: 255 })
+      .start();
   }
 
   private async initIcon() {

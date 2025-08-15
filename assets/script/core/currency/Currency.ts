@@ -6,11 +6,11 @@ const { ccclass, property } = _decorator;
 
 @ccclass("Currency")
 export class Currency {
-  private _value: number;
+  private _value: number = 0;
   private _defaultValue: number;
 
   @property({ type: Enum(CurrencyNames) })
-  id: string;
+  id: CurrencyNames;
 
   @property({ type: Number, tooltip: "Maximum amount of the currency" })
   maxAmount: number = Number.MAX_SAFE_INTEGER;
