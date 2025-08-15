@@ -306,10 +306,75 @@ items:
           nodeUuid: 26xC+4UOFDlrap76GWZX6W
           reference: 32cf602b-e709-441e-b035-2336c8ea36bb
       _variants: []
+  - - ui:shop
+    - key: ui:shop
+      value: Магазин
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: 15Ejk/X+5BSrrBQIfNDzN+
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: 15Ejk/X+5BSrrBQIfNDzN+
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+      _variants: []
+  - - ui:merge
+    - key: ui:merge
+      value: Объединить
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: e03VQBsvJH2qhOZHApQo7M
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: e03VQBsvJH2qhOZHApQo7M
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+      _variants: []
+  - - 9fcEboTXVF1YJTYVDCdW0R
+    - key: 9fcEboTXVF1YJTYVDCdW0R
+      value: Объединить
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: 30XipBKDRFspggRJyE6zaC
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: 30XipBKDRFspggRJyE6zaC
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+      _variants: []
+  - - 786LWpxwpM6aF27pUjlkei
+    - key: 786LWpxwpM6aF27pUjlkei
+      value: Магазин
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: 5b+hMHFkRLBKworz7ZkMTv
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: 5b+hMHFkRLBKworz7ZkMTv
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+      _variants: []
+  - - 73e6gjE0lAj4pNGxikeecY
+    - key: 73e6gjE0lAj4pNGxikeecY
+      value: Старт
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: d1k+DakvZO8JYqZ9NkwLGy
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: d1k+DakvZO8JYqZ9NkwLGy
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+      _variants: []
 languageConfig:
   bcp47Tag: ru
   providerTag: ru
-  translateFinished: 68
-  translateTotal: 68
+  translateFinished: 107
+  translateTotal: 107
   compileFinished: 0
-  compileTotal: 36
+  compileTotal: 41

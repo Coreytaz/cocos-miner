@@ -66,10 +66,307 @@ items:
           nodeUuid: 26xC+4UOFDlrap76GWZX6W
           reference: 32cf602b-e709-441e-b035-2336c8ea36bb
       _variants: []
+  - - ui:shop
+    - key: ui:shop
+      value: Shop
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: 15Ejk/X+5BSrrBQIfNDzN+
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: 15Ejk/X+5BSrrBQIfNDzN+
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+      _variants: []
+  - - b5606e33-ad4d-47f0-a259-86a709ae82fe
+    - key: b5606e33-ad4d-47f0-a259-86a709ae82fe
+      value: b5606e33-ad4d-47f0-a259-86a709ae82fe
+      type: 1
+      isVariant: false
+      associations:
+        - reference: b5606e33-ad4d-47f0-a259-86a709ae82fe
+      _variants: []
+  - - 94a93369-c220-43bc-916f-9913ca67965a
+    - key: 94a93369-c220-43bc-916f-9913ca67965a
+      value: 94a93369-c220-43bc-916f-9913ca67965a
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 94a93369-c220-43bc-916f-9913ca67965a
+      _variants: []
+  - - f0828ac8-2149-4017-afa7-2e7e02c56b39
+    - key: f0828ac8-2149-4017-afa7-2e7e02c56b39
+      value: f0828ac8-2149-4017-afa7-2e7e02c56b39
+      type: 1
+      isVariant: false
+      associations:
+        - reference: f0828ac8-2149-4017-afa7-2e7e02c56b39
+      _variants: []
+  - - 0d770c4d-fd48-4357-8432-34a503abb99c
+    - key: 0d770c4d-fd48-4357-8432-34a503abb99c
+      value: 0d770c4d-fd48-4357-8432-34a503abb99c
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 0d770c4d-fd48-4357-8432-34a503abb99c
+      _variants: []
+  - - d3ba6836-bb8d-44e4-bde1-aed846cb917e
+    - key: d3ba6836-bb8d-44e4-bde1-aed846cb917e
+      value: d3ba6836-bb8d-44e4-bde1-aed846cb917e
+      type: 1
+      isVariant: false
+      associations:
+        - reference: d3ba6836-bb8d-44e4-bde1-aed846cb917e
+      _variants: []
+  - - f5eef664-7699-4668-9419-d392d4677aad
+    - key: f5eef664-7699-4668-9419-d392d4677aad
+      value: f5eef664-7699-4668-9419-d392d4677aad
+      type: 1
+      isVariant: false
+      associations:
+        - reference: f5eef664-7699-4668-9419-d392d4677aad
+      _variants: []
+  - - 2be8c96a-e0b7-4a10-914e-594e10e678f4
+    - key: 2be8c96a-e0b7-4a10-914e-594e10e678f4
+      value: 2be8c96a-e0b7-4a10-914e-594e10e678f4
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 2be8c96a-e0b7-4a10-914e-594e10e678f4
+      _variants: []
+  - - f4e9c7e7-6b56-4b5d-ab5d-11b3b6925afe
+    - key: f4e9c7e7-6b56-4b5d-ab5d-11b3b6925afe
+      value: f4e9c7e7-6b56-4b5d-ab5d-11b3b6925afe
+      type: 1
+      isVariant: false
+      associations:
+        - reference: f4e9c7e7-6b56-4b5d-ab5d-11b3b6925afe
+      _variants: []
+  - - e8168d48-6bc8-445e-8e08-21829459e8eb
+    - key: e8168d48-6bc8-445e-8e08-21829459e8eb
+      value: e8168d48-6bc8-445e-8e08-21829459e8eb
+      type: 1
+      isVariant: false
+      associations:
+        - reference: e8168d48-6bc8-445e-8e08-21829459e8eb
+      _variants: []
+  - - 16cbf0a3-bf17-4e23-b7a2-605a3e5d57b8
+    - key: 16cbf0a3-bf17-4e23-b7a2-605a3e5d57b8
+      value: 16cbf0a3-bf17-4e23-b7a2-605a3e5d57b8
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 16cbf0a3-bf17-4e23-b7a2-605a3e5d57b8
+      _variants: []
+  - - 5c10b159-1d76-44fc-b719-2742d0a62272
+    - key: 5c10b159-1d76-44fc-b719-2742d0a62272
+      value: 5c10b159-1d76-44fc-b719-2742d0a62272
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 5c10b159-1d76-44fc-b719-2742d0a62272
+      _variants: []
+  - - d53a1c60-14f3-4f81-bc18-ad1fb14c38bc
+    - key: d53a1c60-14f3-4f81-bc18-ad1fb14c38bc
+      value: d53a1c60-14f3-4f81-bc18-ad1fb14c38bc
+      type: 1
+      isVariant: false
+      associations:
+        - reference: d53a1c60-14f3-4f81-bc18-ad1fb14c38bc
+      _variants: []
+  - - a30ab8cc-f0ed-414e-adeb-009746deb32f
+    - key: a30ab8cc-f0ed-414e-adeb-009746deb32f
+      value: a30ab8cc-f0ed-414e-adeb-009746deb32f
+      type: 1
+      isVariant: false
+      associations:
+        - reference: a30ab8cc-f0ed-414e-adeb-009746deb32f
+      _variants: []
+  - - da366d64-48c7-4824-b2cb-8140a20da8ec
+    - key: da366d64-48c7-4824-b2cb-8140a20da8ec
+      value: da366d64-48c7-4824-b2cb-8140a20da8ec
+      type: 1
+      isVariant: false
+      associations:
+        - reference: da366d64-48c7-4824-b2cb-8140a20da8ec
+      _variants: []
+  - - 972b66b1-b575-4036-9c61-c40bb05a38ca
+    - key: 972b66b1-b575-4036-9c61-c40bb05a38ca
+      value: 972b66b1-b575-4036-9c61-c40bb05a38ca
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 972b66b1-b575-4036-9c61-c40bb05a38ca
+      _variants: []
+  - - eab86b73-6d7e-40bf-bf1a-45a06e838958
+    - key: eab86b73-6d7e-40bf-bf1a-45a06e838958
+      value: eab86b73-6d7e-40bf-bf1a-45a06e838958
+      type: 1
+      isVariant: false
+      associations:
+        - reference: eab86b73-6d7e-40bf-bf1a-45a06e838958
+      _variants: []
+  - - 2882dcd6-3434-407d-bffb-e0866781c356
+    - key: 2882dcd6-3434-407d-bffb-e0866781c356
+      value: 2882dcd6-3434-407d-bffb-e0866781c356
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 2882dcd6-3434-407d-bffb-e0866781c356
+      _variants: []
+  - - e285d1df-6dfa-4080-bdda-da985bf9654b
+    - key: e285d1df-6dfa-4080-bdda-da985bf9654b
+      value: e285d1df-6dfa-4080-bdda-da985bf9654b
+      type: 1
+      isVariant: false
+      associations:
+        - reference: e285d1df-6dfa-4080-bdda-da985bf9654b
+      _variants: []
+  - - 913e54af-63d2-483f-9472-82e06c3655ba
+    - key: 913e54af-63d2-483f-9472-82e06c3655ba
+      value: 913e54af-63d2-483f-9472-82e06c3655ba
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 913e54af-63d2-483f-9472-82e06c3655ba
+      _variants: []
+  - - 3aa6c246-435a-4c45-8b94-142ce376d531
+    - key: 3aa6c246-435a-4c45-8b94-142ce376d531
+      value: 3aa6c246-435a-4c45-8b94-142ce376d531
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 3aa6c246-435a-4c45-8b94-142ce376d531
+      _variants: []
+  - - a05d0fba-471d-4005-aa03-47f76298b69f
+    - key: a05d0fba-471d-4005-aa03-47f76298b69f
+      value: a05d0fba-471d-4005-aa03-47f76298b69f
+      type: 1
+      isVariant: false
+      associations:
+        - reference: a05d0fba-471d-4005-aa03-47f76298b69f
+      _variants: []
+  - - 4ef17d52-a3ab-4720-8dab-32229a699a2b
+    - key: 4ef17d52-a3ab-4720-8dab-32229a699a2b
+      value: 4ef17d52-a3ab-4720-8dab-32229a699a2b
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 4ef17d52-a3ab-4720-8dab-32229a699a2b
+      _variants: []
+  - - acc76edc-4350-4dec-a168-bef4038a2ac8
+    - key: acc76edc-4350-4dec-a168-bef4038a2ac8
+      value: acc76edc-4350-4dec-a168-bef4038a2ac8
+      type: 1
+      isVariant: false
+      associations:
+        - reference: acc76edc-4350-4dec-a168-bef4038a2ac8
+      _variants: []
+  - - ad343553-7c1c-4468-9e37-36c11ab57fd6
+    - key: ad343553-7c1c-4468-9e37-36c11ab57fd6
+      value: ad343553-7c1c-4468-9e37-36c11ab57fd6
+      type: 1
+      isVariant: false
+      associations:
+        - reference: ad343553-7c1c-4468-9e37-36c11ab57fd6
+      _variants: []
+  - - 9b56f118-80ee-4832-b1c3-72ae1aceae65
+    - key: 9b56f118-80ee-4832-b1c3-72ae1aceae65
+      value: 9b56f118-80ee-4832-b1c3-72ae1aceae65
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 9b56f118-80ee-4832-b1c3-72ae1aceae65
+      _variants: []
+  - - 3db5b630-4b62-4d3a-9a9b-5349659ca104
+    - key: 3db5b630-4b62-4d3a-9a9b-5349659ca104
+      value: 3db5b630-4b62-4d3a-9a9b-5349659ca104
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 3db5b630-4b62-4d3a-9a9b-5349659ca104
+      _variants: []
+  - - d44b96e4-0155-49de-869e-d14c7d1c0a4f
+    - key: d44b96e4-0155-49de-869e-d14c7d1c0a4f
+      value: d44b96e4-0155-49de-869e-d14c7d1c0a4f
+      type: 1
+      isVariant: false
+      associations:
+        - reference: d44b96e4-0155-49de-869e-d14c7d1c0a4f
+      _variants: []
+  - - 58dd5a0a-af2e-4248-8012-d125e737721e
+    - key: 58dd5a0a-af2e-4248-8012-d125e737721e
+      value: 58dd5a0a-af2e-4248-8012-d125e737721e
+      type: 1
+      isVariant: false
+      associations:
+        - reference: 58dd5a0a-af2e-4248-8012-d125e737721e
+      _variants: []
+  - - b297f929-14ab-4051-9729-18165d0358f0
+    - key: b297f929-14ab-4051-9729-18165d0358f0
+      value: b297f929-14ab-4051-9729-18165d0358f0
+      type: 1
+      isVariant: false
+      associations:
+        - reference: b297f929-14ab-4051-9729-18165d0358f0
+      _variants: []
+  - - ui:merge
+    - key: ui:merge
+      value: Merge
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: e03VQBsvJH2qhOZHApQo7M
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: e03VQBsvJH2qhOZHApQo7M
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+      _variants: []
+  - - 9fcEboTXVF1YJTYVDCdW0R
+    - key: 9fcEboTXVF1YJTYVDCdW0R
+      value: Shop
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: 30XipBKDRFspggRJyE6zaC
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: 30XipBKDRFspggRJyE6zaC
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+      _variants: []
+  - - 786LWpxwpM6aF27pUjlkei
+    - key: 786LWpxwpM6aF27pUjlkei
+      value: Merge
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: 5b+hMHFkRLBKworz7ZkMTv
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: 5b+hMHFkRLBKworz7ZkMTv
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+      _variants: []
+  - - 73e6gjE0lAj4pNGxikeecY
+    - key: 73e6gjE0lAj4pNGxikeecY
+      value: Start
+      type: 2
+      isVariant: false
+      associations:
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: d1k+DakvZO8JYqZ9NkwLGy
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+        - sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: d1k+DakvZO8JYqZ9NkwLGy
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+      _variants: []
 languageConfig:
   bcp47Tag: en
   providerTag: en
-  translateFinished: 38
-  translateTotal: 30
+  translateFinished: 106
+  translateTotal: 82
   compileFinished: 0
-  compileTotal: 6
+  compileTotal: 40

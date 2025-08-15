@@ -252,14 +252,18 @@ items:
       value: ''
       type: 2
       isVariant: false
-      associations: []
+      associations:
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
       _variants: []
   - - 3f3bcfNdK1FOp3EPojScAlu
     - key: 3f3bcfNdK1FOp3EPojScAlu
       value: ''
       type: 2
       isVariant: false
-      associations: []
+      associations:
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
       _variants: []
   - - afN4GLwwJDBL4BS5kgjvLY
     - key: afN4GLwwJDBL4BS5kgjvLY
@@ -273,14 +277,16 @@ items:
       value: ''
       type: 2
       isVariant: false
-      associations: []
+      associations:
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
       _variants: []
   - - 846PWgRItLZa94YF+9iw0y
     - key: 846PWgRItLZa94YF+9iw0y
       value: ''
       type: 2
       isVariant: false
-      associations: []
+      associations:
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
       _variants: []
   - - default
     - key: default
@@ -290,11 +296,54 @@ items:
       associations:
         - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
         - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
-        - nodeUuid: a7gXK9WipHXZv8W5BWe9Ay
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+        - nodeUuid: 025c9ZuLZFLYaTMwdWlXXP
+      _variants: []
+  - - ui:shop
+    - key: ui:shop
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - ui:merge
+    - key: ui:merge
+      value: ''
+      type: 2
+      isVariant: false
+      associations: []
+      _variants: []
+  - - 786LWpxwpM6aF27pUjlkei
+    - key: 786LWpxwpM6aF27pUjlkei
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - nodeUuid: 9eljNTaQ5LZIDNwes3FO74
+      _variants: []
+  - - 9fcEboTXVF1YJTYVDCdW0R
+    - key: 9fcEboTXVF1YJTYVDCdW0R
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - nodeUuid: 9eljNTaQ5LZIDNwes3FO74
+      _variants: []
+  - - 73e6gjE0lAj4pNGxikeecY
+    - key: 73e6gjE0lAj4pNGxikeecY
+      value: ''
+      type: 2
+      isVariant: false
+      associations:
+        - &ref_0
+          sceneUuid: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+          nodeUuid: d1k+DakvZO8JYqZ9NkwLGy
+          reference: 3ef9f280-ae7a-4f48-b4ca-d0044eedaaec
+        - *ref_0
       _variants: []
 languageConfig:
   bcp47Tag: index
-  translateFinished: 68
+  translateFinished: 107
   translateTotal: 0
   compileFinished: 0
   compileTotal: 0

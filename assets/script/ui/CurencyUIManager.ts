@@ -13,11 +13,8 @@ export class CurencyUIManager extends Component {
 
   protected start(): void {
     this.initUI();
-    this.subscribeCurrencyUpdate();
-  }
-
-  protected onDestroy() {
     this.unSubscribeCurrencyUpdate();
+    this.subscribeCurrencyUpdate();
   }
 
   initUI() {
